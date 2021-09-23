@@ -11,6 +11,11 @@ class ApplicationController < Sinatra::Base
     employees.to_json
   end
 
+  get '/managers' do
+    managers = Managers.all.order(:hire_date)
+    managers.to_json
+  end
+
   get '/employees/:employee_num' do
     employee = Employees.find_by('employee_num = ?', params[:employee_num])
     employee.to_json
