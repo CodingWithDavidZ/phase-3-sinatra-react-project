@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2021_09_22_212502) do
     t.string "last_name"
     t.date "hire_date"
     t.integer "employee_num"
-    t.integer "managers_id"
+    t.integer "manager_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

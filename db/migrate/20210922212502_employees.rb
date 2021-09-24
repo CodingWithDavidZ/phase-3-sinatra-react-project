@@ -5,7 +5,7 @@ class Employees < ActiveRecord::Migration[6.1]
       t.string :last_name
       t.date :hire_date
       t.integer :employee_num
-      t.integer :managers_id
+      t.integer :manager_id
       t.timestamps
     end
   end
